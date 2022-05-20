@@ -85,7 +85,7 @@ export default function Home() {
                 >
                   <Input />
                 </Form.Item>
-                {winner !== null && winner !== index && (
+                {winner > 0 && winner !== index && (
                   <>
                     <Form.Item name={`password${index}`} initialValue="a12345678" label="Password">
                       <Input.Password />
